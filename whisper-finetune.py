@@ -20,14 +20,14 @@ common_voice["train"] = load_dataset(
     "zh-CN", 
     split="train+validation", 
     trust_remote_code=True,
-    cache_dir="root/autodl-tmp/cache"
+    cache_dir="/root/autodl-tmp/cache"
 )
 common_voice["test"] = load_dataset(
     "mozilla-foundation/common_voice_11_0", 
     "zh-CN", 
     split="test", 
     trust_remote_code=True,
-    cache_dir="root/autodl-tmp/cache"
+    cache_dir="/root/autodl-tmp/cache"
 )
 
 # 移除不必要的列
