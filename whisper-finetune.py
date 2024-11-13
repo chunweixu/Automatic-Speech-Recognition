@@ -35,19 +35,21 @@ columns_to_remove = [
 ]
 common_voice = common_voice.remove_columns(columns_to_remove)
 
+MODEL = "openai/whisper-large-v3-turbo"
+
 # 3. 初始化处理器和模型
-feature_extractor = WhisperFeatureExtractor.from_pretrained("openai/whisper-base")
+feature_extractor = WhisperFeatureExtractor.from_pretrained(MODEL)
 tokenizer = WhisperTokenizer.from_pretrained(
     "openai/whisper-base", 
     language="Chinese", 
     task="transcribe"
 )
 processor = WhisperProcessor.from_pretrained(
-    "openai/whisper-small", 
+    MODEL, 
     language="Chinese", 
     task="transcribe"
 )
-model = WhisperForConditionalGeneration.from_pretrained("openai/whisper-base")
+model = WhisperForConditionalGeneration.from_pretrained(MODEL)
 
 # 设置模型配置
 model.generation_config.language = "chinese"
@@ -115,8 +117,8 @@ def compute_metrics(pred):
 
 # 7. 训练配置
 training_args = Seq2SeqTrainingArguments(
-    output_dir="./whisper-base-cn",
-    per_device_train_batch_size=16,
+    output_dir="./whisper-large-v3-turbo-cn",
+    per_device_train_batch_size=64,
     gradient_accumulation_steps=1,
     learning_rate=1e-5,
     warmup_steps=500,
@@ -124,7 +126,7 @@ training_args = Seq2SeqTrainingArguments(
     gradient_checkpointing=True,
     fp16=True,
     eval_strategy="steps",
-    per_device_eval_batch_size=8,
+    per_device_eval_batch_size=32,
     predict_with_generate=True,
     generation_max_length=225,
     save_steps=1000,
