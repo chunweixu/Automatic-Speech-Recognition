@@ -1,0 +1,19 @@
+{"time":"2024-11-13T10:54:46.377633+08:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-13T10:54:46.37771+08:00","level":"INFO","msg":"created symlink","path":"/Users/smiling/Project/ASR/wandb/run-20241113_105446-a3tpm5u4/logs/debug-core.log"}
+{"time":"2024-11-13T10:54:46.897365+08:00","level":"INFO","msg":"created new stream","id":"a3tpm5u4"}
+{"time":"2024-11-13T10:54:46.897406+08:00","level":"INFO","msg":"stream: started","id":"a3tpm5u4"}
+{"time":"2024-11-13T10:54:46.897528+08:00","level":"INFO","msg":"sender: started","stream_id":"a3tpm5u4"}
+{"time":"2024-11-13T10:54:46.897445+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"a3tpm5u4"}}
+{"time":"2024-11-13T10:54:46.89752+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"a3tpm5u4"}}
+{"time":"2024-11-13T10:54:47.804826+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-13T11:01:18.742095+08:00","level":"INFO","msg":"stream: closing","id":"a3tpm5u4"}
+{"time":"2024-11-13T11:01:18.743739+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-13T11:01:18.762201+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-13T11:01:19.206671+08:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-13T11:01:19.206722+08:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-13T11:01:19.206732+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-13T11:01:20.782245+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-13T11:01:21.693001+08:00","level":"INFO","msg":"sender: closed","stream_id":"a3tpm5u4"}
+{"time":"2024-11-13T11:01:21.692949+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"a3tpm5u4"}}
+{"time":"2024-11-13T11:01:21.69299+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"a3tpm5u4"}}
+{"time":"2024-11-13T11:01:21.694005+08:00","level":"INFO","msg":"stream: closed","id":"a3tpm5u4"}

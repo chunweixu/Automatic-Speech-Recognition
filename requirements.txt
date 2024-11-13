@@ -1,0 +1,16 @@
+# 核心依赖
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+evaluate>=0.4.0
+librosa>=0.10.0
+
+# 音频处理
+soundfile>=0.12.1
+
+# 可视化和日志
+wandb>=0.15.0
+
+# 其他工具
+numpy>=1.24.0
+tqdm>=4.65.0

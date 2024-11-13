@@ -1,0 +1,35 @@
+{
+  "os": "macOS-14.5-arm64-arm-64bit",
+  "python": "3.10.15",
+  "startedAt": "2024-11-13T02:54:46.374426Z",
+  "program": "/Users/smiling/Project/ASR/whisper-finetune.py",
+  "codePath": "whisper-finetune.py",
+  "email": "602342841@qq.com",
+  "root": "/Users/smiling/Project/ASR",
+  "host": "smilingdeMacBook-Air.local",
+  "username": "smiling",
+  "executable": "/Users/smiling/miniconda3/envs/py310/bin/python",
+  "codePathLocal": "whisper-finetune.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "494384795648",
+      "used": "453425381376"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M1",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 8,
+    "memoryGb": 16
+  }
+}

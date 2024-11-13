@@ -1,0 +1,38 @@
+  0%|                                                                                                                              | 0/5000 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.43.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+`use_cache = True` is incompatible with gradient checkpointing. Setting `use_cache = False`...
+  0%|▎                                                                                                                 | 15/5000 [06:20<32:02:54, 23.14s/it]Traceback (most recent call last):
+  File "/Users/smiling/Project/ASR/whisper-finetune.py", line 162, in <module>
+    trainer.train()
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 3612, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/accelerate/accelerator.py", line 2241, in backward
+    loss.backward(**kwargs)
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/smiling/Project/ASR/whisper-finetune.py", line 162, in <module>
+    trainer.train()
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/transformers/trainer.py", line 3612, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/accelerate/accelerator.py", line 2241, in backward
+    loss.backward(**kwargs)
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/Users/smiling/miniconda3/envs/py310/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
